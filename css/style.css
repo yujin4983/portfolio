@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+#wrap {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.inner {
+  width: 1420px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 80px;
+  text-align: center;
+  margin: 100px 0;
+}
+h2 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+p {
+  font-family: "Pretendard";
+  font-size: 25px;
+  padding: 3px;
+  font-weight: 600;
+}
+/* ------header----- */
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000000;
+}
+header ul {
+  display: flex;
+  margin: 40px;
+}
+header li {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 22pt;
+  padding: 0 25px;
+}
+
+/* ------section1 about----- */
+section .sect1 {
+  display: flex;
+  margin-left: 250px;
+}
+.sect1_p {
+  margin-left: 150px;
+}
+.sect1_p1 {
+  margin-bottom: 50px;
+}
+.sect1_p2 {
+  margin-bottom: 30px;
+}
+.sect1_p3 img {
+  padding-right: 20px;
+  width: 90px;
+}
+.about h1 {
+  position: relative;
+}
+.about h1 span {
+  position: relative;
+  z-index: 100;
+  border-bottom: 3px solid;
+}
+.about h1::before {
+  content: "about";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  color: #d4d0cd;
+  left: 50%;
+  transform: translate(-130px, -39px);
+  font-size: 100px;
+}
+/* ------section2 main----- */
+.main h1 {
+  position: relative;
+}
+.main h1 span {
+  position: relative;
+  z-index: 100;
+  border-bottom: 3px solid;
+}
+.main h1::before {
+  content: "main";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  color: #d4d0cd;
+  left: 50%;
+  transform: translate(-115px, -39px);
+  font-size: 100px;
+}
+.sect2 h2 {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0 20px 0;
+  font-size: 96px;
+  font-weight: 400;
+  font-style: italic;
+}
+.sect2 {
+  border: 1px solid red;
+  background-color: #2f2c2a;
+  height: 670px;
+}
+.sect2 ul {
+  display: flex;
+  padding: 50px 0;
+}
+.bx-wrapper {
+  max-width: 100% !important;
+}
+/* ------section3 visual----- */
+.visual h1 {
+  position: relative;
+}
+.visual h1 span {
+  position: relative;
+  z-index: 100;
+  border-bottom: 3px solid;
+}
+.visual h1::before {
+  content: "visual";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  color: #d4d0cd;
+  left: 50%;
+  transform: translate(-140px, -39px);
+  font-size: 100px;
+}
+.sect3 {
+  display: flex;
+}
+.sect3 div img {
+  display: block;
+  padding: 5px;
+}
+.sect3_img {
+  display: flex;
+  padding-left: 10px;
+}
+.div_ul1 ul {
+  margin-bottom: 60px;
+}
+.div_ul1 li {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-size: 40px;
+  padding: 0 0 5px 0;
+  text-align: center;
+}
+
+.div_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.div_ul h2 {
+  font-size: 64px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.div_ul a {
+  font-size: 40px;
+  border: 3px solid #1a1818;
+  border-radius: 40px;
+  width: 178px;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+  margin-left: 20px;
+}
+/* ------section4 video----- */
+.video {
+  margin-bottom: 150px;
+}
+.video h1 {
+  position: relative;
+}
+.video h1 span {
+  position: relative;
+  z-index: 100;
+  border-bottom: 3px solid;
+}
+.video h1::before {
+  content: "video";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  color: #d4d0cd;
+  left: 50%;
+  transform: translate(-123px, -39px);
+  font-size: 100px;
+}
+.sect4_video1 {
+  display: flex;
+  margin-bottom: 80px;
+}
+.video1_p {
+  text-align: start;
+  font-family: "Pretendard";
+  padding: 420px 0 30px 55px;
+}
+.video1_p h3 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.video1_p p {
+  font-size: 20px;
+}
+.video2_p {
+  text-align: end;
+  font-family: "Pretendard";
+  padding: 410px 0 7px 0;
+}
+.video2_p h3 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.video2_p p {
+  font-size: 20px;
+}
+.sect4_video2 {
+  display: flex;
+}
+.sect4_video2 video {
+  position: relative;
+  top: 0;
+  left: 8%;
+}
+.sect4_video2 img {
+  position: absolute;
+  left: 52%;
+}
+.video1 video {
+  position: relative;
+  left: 15px;
+  top: -2px;
+}
+.video1 img {
+  position: absolute;
+  left: 12.5%;
+}
+.video2_p {
+  text-align: end;
+}
+.popup_video1 {
+  position: fixed;
+  top: 0;
+  left: 15%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* overflow: scroll; */
+  width: 1920px;
+  height: 1080px;
+  display: none;
+  z-index: 10000;
+}
+.popup_video1 video {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.popup_video1 a {
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  z-index: 100000;
+}
+/* ------section5 web----- */
+.web h1 {
+  position: relative;
+}
+.web h1 span {
+  position: relative;
+  z-index: 100;
+  border-bottom: 3px solid;
+}
+.web h1::before {
+  content: "web";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  color: #d4d0cd;
+  left: 50%;
+  transform: translate(-91px, -39px);
+  font-size: 100px;
+}
+.web {
+  margin-bottom: 100px;
+}
+.web div {
+  text-align: center;
+}
+.web div img {
+  padding: 0 50px 50px 50px;
+}
+/* ---------footer-------- */
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #2f2c2a;
+  height: 850px;
+}
+footer h2 {
+  font-size: 96px;
+  padding: 50px;
+}
+.footer_border {
+  border: 3px solid #fff;
+  width: 930px;
+  height: 530px;
+  position: relative;
+  top: 0;
+  left: 25%;
+  padding: 30px;
+}
+.footer_p {
+  font-size: 48px;
+  font-family: "Libre Bodoni", serif;
+  font-weight: bold;
+  font-style: italic;
+  padding: 40px 0 10px 0;
+}
+.footer_p1 {
+  font-size: 32px;
+  font-family: "Libre Bodoni", serif;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.footer_p2 {
+  font-size: 20px;
+  font-family: "Libre Bodoni", serif;
+  font-weight: bold;
+  font-style: italic;
+  padding: 50px;
+}
+.footer_p3 {
+  font-size: 12px;
+  font-family: "Pretendard";
+}

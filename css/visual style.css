@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#wrap {
+  width: 100%;
+}
+#works {
+  width: 1490px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+h1 span {
+  border-bottom: 3px solid;
+}
+.visual_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.visual_header a {
+  padding: 10px 20px 0 0;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#works .row {
+  display: flex;
+}
+
+#works .col {
+  width: 32%;
+  aspect-ratio: 4/3;
+  /* outline: 1px solid red; */
+  margin-right: 30px;
+}
+#works .box img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+#works .box a {
+  margin: 30px 0;
+  display: block;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
