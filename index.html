@@ -21,29 +21,29 @@
     <header class="header">
       <a href="#"><img src="./images/logo.svg" alt="" /></a>
       <ul>
-        <a href="#">
+        <a href="#about">
           <li>about</li>
         </a>
-        <a href="#">
+        <a href="#main">
           <li>main</li>
         </a>
-        <a href="#">
+        <a href="#visual">
           <li>visual</li>
         </a>
-        <a href="#">
+        <a href="#video">
           <li>video</li>
         </a>
-        <a href="#">
+        <a href="#web">
           <li>web</li>
         </a>
-        <a href="#">
+        <a href="#contact">
           <li>contact</li>
         </a>
       </ul>
     </header>
     <main>
       <!--------section1 About------->
-      <section class="about">
+      <section id="about" class="about">
         <h1><span>about</span></h1>
         <article class="sect1">
           <img src="./images/KakaoTalk_20230607_114222250.jpg" alt="" />
@@ -82,7 +82,7 @@
       </section>
 
       <!--------section2 main------->
-      <section class="main">
+      <section id="main" class="main">
         <h1><span>main</span></h1>
         <article class="sect2">
           <h2>Portfolio</h2>
@@ -98,7 +98,7 @@
         </article>
       </section>
       <!--------section3 visual------->
-      <section class="visual">
+      <section id="visual" class="visual">
         <h1><span>visual</span></h1>
         <article class="sect3 inner">
           <div class="sect3_img">
@@ -130,14 +130,17 @@
         </article>
       </section>
       <!--------section4 video------->
-      <section class="video inner">
+      <section id="video" class="video">
         <h1><span>video</span></h1>
         <article class="sect4_video1">
           <div class="video1">
-            <video width="660px" height="410px" autoplay controls>
-              <source src="./images/김유진-광고 만들기2.mp4" type="video/mp4">
-            </video>
-            <img src="./images/frame.png" alt="">
+            <a href="#">
+              <img class="big" src="./images/확대.png" alt="">
+              <video width="670px" height="415px" autoplay controls loop muted>
+                <source src="./images/김유진-광고 만들기2.mp4" type="video/mp4">
+              </video>
+              <img class="img_frame" src="./images/frame.png" alt="">
+            </a>
           </div>
           <div class="video1_p">
             <h3>일리윤 바디로션 광고</h3>
@@ -150,26 +153,36 @@
             <p>일러스트와 포토샵에서 판타블렛을 이용해 그림을 그린 후 애프터 이펙트를 활용해 영상 편집 </p>
           </div>
           <div class="video2">
-            <video width="660px" height="410px" autoplay controls>
-              <source src="./images/모션 그래픽 과제.mp4" type="video/mp4">
-            </video>
-            <img src="./images/frame.png" alt="">
+            <a href="#">
+              <img class="big" src="./images/확대.png" alt="">
+              <video width="670px" height="415px" autoplay controls loop muted>
+                <source src="./images/모션 그래픽 과제.mp4" type="video/mp4">
+              </video>
+              <img class="img_frame" src="./images/frame.png" alt="">
+            </a>
           </div>
         </article>
       </section>
 
       <!--------section5 web------->
-      <section class="web ">
+      <section id="web" class="web ">
         <h1><span>web</span></h1>
         <div>
-          <img src="./images/frame.png" alt="">
-          <img src="./images/frame.png" alt="">
+          <a href="./unicef/index.html">
+            <img class="search" src="./images/search.svg" alt="">
+            <img class="unicef" src="./images/web.jpg" alt="">
+          </a>
+          <a href="./index.html">
+            <img class="search" src="./images/search.svg" alt="">
+            <img class="unicef" src="./images/web2.jpg" alt="">
+          </a>
+
         </div>
 
       </section>
     </main>
     <!--------footer------->
-    <footer>
+    <footer id="contact">
       <h2>contact</h2>
       <div class="footer_border">
         <p class="footer_p">Kim yujin</p>
@@ -183,9 +196,15 @@
     </footer>
   </div>
   <div class="popup_video1">
-    <a href="#"><img src="./images/home bt.png" alt=""></a>
+    <a href="#"><img src="./images/close.png" alt=""></a>
     <video autoplay controls>
       <source src="./images/김유진-광고 만들기2.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="popup_video2">
+    <a href="#"><img src="./images/close.png" alt=""></a>
+    <video autoplay controls>
+      <source src="./images//모션 그래픽 과제.mp4" type="video/mp4">
     </video>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -201,11 +220,24 @@
     });
 
     $('.video1').click(function () {
+      event.preventDefault()
       $('.popup_video1').fadeIn()
     })
 
     $('.popup_video1 a').click(function () {
+      event.preventDefault()
       $('.popup_video1').fadeOut()
+
+    })
+    $('.video2').click(function () {
+      event.preventDefault()
+      $('.popup_video2').fadeIn()
+    })
+
+    $('.popup_video2 a').click(function () {
+      event.preventDefault()
+      $('.popup_video2').fadeOut()
+
     })
   </script>
 </body>
